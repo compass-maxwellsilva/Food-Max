@@ -16,6 +16,8 @@
 		8272E5AB28B017E1003F3258 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272E5AA28B017E1003F3258 /* Food.swift */; };
 		82CBDA7728AECB60000B253B /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBDA7528AECB60000B253B /* CustomCell.swift */; };
 		82CBDA7828AECB60000B253B /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82CBDA7628AECB60000B253B /* CustomCell.xib */; };
+		82F2CBB828BFE1A10078355A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F2CBB628BFE1A10078355A /* DetailViewController.swift */; };
+		82F2CBB928BFE1A10078355A /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F2CBB728BFE1A10078355A /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		8272E5AA28B017E1003F3258 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		82CBDA7528AECB60000B253B /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		82CBDA7628AECB60000B253B /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		82F2CBB628BFE1A10078355A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		82F2CBB728BFE1A10078355A /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +68,8 @@
 			children = (
 				823C550628AD74D900F98A61 /* SceneDelegate.swift */,
 				823C550428AD74D900F98A61 /* AppDelegate.swift */,
-				823C551828AD755A00F98A61 /* Model */,
-				823C551928AD756300F98A61 /* View */,
-				823C551A28AD758100F98A61 /* Controller */,
+				82F2CBB528BFE11E0078355A /* ItemDetails */,
+				82A02E8D28D9043700008A58 /* HomeList */,
 				823C550D28AD74DE00F98A61 /* Assets.xcassets */,
 				823C550F28AD74DE00F98A61 /* LaunchScreen.storyboard */,
 				823C551228AD74DE00F98A61 /* Info.plist */,
@@ -98,6 +101,49 @@
 				823C550828AD74D900F98A61 /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		82A02E8D28D9043700008A58 /* HomeList */ = {
+			isa = PBXGroup;
+			children = (
+				823C551828AD755A00F98A61 /* Model */,
+				823C551928AD756300F98A61 /* View */,
+				823C551A28AD758100F98A61 /* Controller */,
+			);
+			path = HomeList;
+			sourceTree = "<group>";
+		};
+		82A02E8E28D9050C00008A58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		82A02E8F28D9051500008A58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82F2CBB728BFE1A10078355A /* DetailViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		82A02E9028D9051B00008A58 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				82F2CBB628BFE1A10078355A /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		82F2CBB528BFE11E0078355A /* ItemDetails */ = {
+			isa = PBXGroup;
+			children = (
+				82A02E8E28D9050C00008A58 /* Model */,
+				82A02E8F28D9051500008A58 /* View */,
+				82A02E9028D9051B00008A58 /* Controller */,
+			);
+			path = ItemDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +206,7 @@
 			files = (
 				823C551128AD74DE00F98A61 /* LaunchScreen.storyboard in Resources */,
 				823C550E28AD74DE00F98A61 /* Assets.xcassets in Resources */,
+				82F2CBB928BFE1A10078355A /* DetailViewController.xib in Resources */,
 				82CBDA7828AECB60000B253B /* CustomCell.xib in Resources */,
 				823C550C28AD74D900F98A61 /* Main.storyboard in Resources */,
 			);
@@ -175,6 +222,7 @@
 				823C550928AD74D900F98A61 /* ViewController.swift in Sources */,
 				823C550528AD74D900F98A61 /* AppDelegate.swift in Sources */,
 				8272E5AB28B017E1003F3258 /* Food.swift in Sources */,
+				82F2CBB828BFE1A10078355A /* DetailViewController.swift in Sources */,
 				82CBDA7728AECB60000B253B /* CustomCell.swift in Sources */,
 				823C550728AD74D900F98A61 /* SceneDelegate.swift in Sources */,
 			);

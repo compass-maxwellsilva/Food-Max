@@ -30,13 +30,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pd3-2I-Yqm" secondAttribute="bottom" id="umz-dQ-ult"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="zEl-PY-NJ4"/>
                     <connections>
                         <outlet property="tableView" destination="pd3-2I-Yqm" id="yaW-HV-ZYD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="111.59420289855073" y="118.52678571428571"/>
+            <point key="canvasLocation" x="1210" y="104"/>
         </scene>
     </scenes>
     <resources>

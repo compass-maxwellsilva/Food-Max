@@ -14,6 +14,7 @@ struct Food {
 
 struct Item {
     let name: String
+    let description: String
     
     var image: UIImage? {
         UIImage(named: name)

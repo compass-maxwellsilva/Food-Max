@@ -12,11 +12,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableView: UITableView!
     
     private let typeFood: [Food] = [
-        Food(type: "Carne", itens: [Item(name: "Carne")]),
-        Food(type: "Massas", itens: [Item(name: "Pizza"), Item(name: "Macarrão Taiwan")]),
-        Food(type: "Complemento", itens: [Item(name: "Pão de alho")]),
-        Food(type: "Bebidas", itens: [Item(name: "Refrigerante"), Item(name: "Suco Natural")]),
-        Food(type: "Sobremesa", itens: [Item(name: "Shake")])
+        Food(type: "Carne", itens: [Item(name: "Picanha", description: "Carne ao ponto Lorem ipsum dolor sit amet. Qui internos rerum est enim ad consequatur voluptas aut consequatur earum qui labore neque et adipisci nostrum non officiis nobis. Sit maiores necessitatibus et dolores autem et eveniet architecto. Est sequi corrupti non dicta molestias et eaque culpa non ipsam sequi vel natus saepe. Et earum quas et molestiae ut cupiditate voluptas non minima voluptatem. Eum sint commodi aut quibusdam omnis et ratione consectetur eum quia nesciunt aut asperiores iure! Ut libero ullam ex dolorem provident qui dignissimos beatae qui saepe consequatur. Et totam totam in sunt doloremque rem alias dolor 33 sunt voluptatibus in ipsum doloribus.")]),
+        Food(type: "Massas", itens: [Item(name: "Pizza", description: "Borda recheada"), Item(name: "Macarrão Taiwan", description: "Lombo crispy")]),
+        Food(type: "Complemento", itens: [Item(name: "Pão de alho", description: "Pão de alho com queijo")]),
+        Food(type: "Bebidas", itens: [Item(name: "Refrigerante", description: "Pepsi"), Item(name: "Suco Natural", description: "Feito da polpa")]),
+        Food(type: "Sobremesa", itens: [Item(name: "Shake", description: "Shake de chocolate")])
     ]
     
     override func viewDidLoad() {
@@ -58,10 +58,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let food = typeFood[indexPath.section].itens
         print(food[indexPath.row].name)
+        present(DetailViewController(item: food[indexPath.row]), animated: true, completion: nil)
     }
     
 }
 
-// 👉🏾 Constraints
-// 👉🏾 Segunda tela: Descrição do item, título e imagem
-// 👉🏾 Usar StackView na segunda tela
+// 👉🏾 Melhorar a tela de detalhes:
+//      1️⃣ Aumentar a imagem
+//      2️⃣ Acrescentar informações nutricionais
+//      3️⃣ porção, receita e até tempo de preparo
+// 👉🏾 Reorganizar a arquitetura MVC para ficar mais legível
+// 👉🏾 Estudo sobre StackView e entender a diferença e aplicações na horizontal e vertical
