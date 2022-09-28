@@ -62,7 +62,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
 }
-
 // 👉🏾 Melhorar a tela de detalhes:
 //      1️⃣ Aumentar a imagem
 //      2️⃣ Acrescentar informações nutricionais
