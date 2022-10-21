@@ -23,8 +23,8 @@ class CustomCell: UITableViewCell {
     }
 
     public func setupCell(product: String, image: UIImage) {
-        self.productLabel.text = product
-        self.productImage.image = image
+            self.productLabel.text = product
+            self.productImage.image = image
     }
     
 }

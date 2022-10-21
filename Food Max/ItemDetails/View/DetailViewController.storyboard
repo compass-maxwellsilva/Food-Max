@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DetailViewController-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController title="DetailViewController" id="Y6W-OH-hqX" customClass="DetailViewController" customModule="Food_Max" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3r-Mb-hdX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iqF-IX-dsR">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="270"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="270" id="X4m-1h-wyB"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VIV-9C-x1n">
+                                        <rect key="frame" x="20" y="300" width="374" height="518"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xx4-wZ-n2h">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="254"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giJ-jF-afe">
+                                                <rect key="frame" x="0.0" y="254" width="374" height="264"/>
+                                                <mutableString key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.098757794149999995" green="0.86078917980000003" blue="0.68728711779999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="xx4-wZ-n2h" firstAttribute="top" secondItem="VIV-9C-x1n" secondAttribute="top" id="8rA-76-nxe"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="VIV-9C-x1n" secondAttribute="bottom" id="H97-db-jog"/>
+                                    <constraint firstItem="iqF-IX-dsR" firstAttribute="top" secondItem="D3r-Mb-hdX" secondAttribute="top" id="HBN-Ql-1nt"/>
+                                    <constraint firstAttribute="trailing" secondItem="VIV-9C-x1n" secondAttribute="trailing" constant="20" id="Zzk-i0-e8e"/>
+                                    <constraint firstItem="iqF-IX-dsR" firstAttribute="leading" secondItem="D3r-Mb-hdX" secondAttribute="leading" id="cBe-x4-feQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="iqF-IX-dsR" secondAttribute="trailing" id="dzK-bW-S6T"/>
+                                    <constraint firstItem="VIV-9C-x1n" firstAttribute="top" secondItem="iqF-IX-dsR" secondAttribute="bottom" constant="30" id="xD8-4u-M2U"/>
+                                    <constraint firstItem="VIV-9C-x1n" firstAttribute="leading" secondItem="D3r-Mb-hdX" secondAttribute="leading" constant="20" id="zai-6l-zJK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="D3r-Mb-hdX" secondAttribute="trailing" id="2DC-8R-LbY"/>
+                            <constraint firstItem="D3r-Mb-hdX" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="9QO-0o-eo7"/>
+                            <constraint firstItem="D3r-Mb-hdX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="LTI-2n-xc1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="D3r-Mb-hdX" secondAttribute="bottom" id="Svw-My-lUN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="giJ-jF-afe" id="6pX-4p-Ztb"/>
+                        <outlet property="imageView" destination="iqF-IX-dsR" id="d2E-nj-5zo"/>
+                        <outlet property="titleLabel" destination="xx4-wZ-n2h" id="Wte-Lo-nZX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
